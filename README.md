@@ -11,4 +11,11 @@
 ```
 
 
+### Move existing tag to head
+```
+git push origin :refs/tags/<tagname>
+git tag -fa <tagname>
+git push origin master --tags
+```
+
 
