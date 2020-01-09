@@ -29,3 +29,8 @@ So, on *nix systems, this can be accomplished by executing the following command
 sudo nmap -sP 192.168.1.0/24 | awk '/^Nmap/{ip=$NF}/B8:27:EB/{print ip}'
 ```
 
+You can easily connect from Linux and OS X with ssh pi@hostname.local (the default hostname is raspberrypi)
+````
+pi@raspberrypi.local
+````
+
