@@ -29,6 +29,8 @@ So, on *nix systems, this can be accomplished by executing the following command
 sudo nmap -sP 192.168.1.0/24 | awk '/^Nmap/{ip=$NF}/B8:27:EB/{print ip}'
 ```
 
+### Connecting a Computer to the Pi
+Recent versions of Raspbian (which use dhcpcd) allow ssh to work over a link-local address and avahi (which is a zeroconf implementation) enables programs to discover hosts running on a local network.
 You can easily connect from Linux and OS X with ssh pi@hostname.local (the default hostname is raspberrypi)
 ````
 pi@raspberrypi.local
