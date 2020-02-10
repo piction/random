@@ -36,3 +36,15 @@ You can easily connect from Linux and OS X with ssh pi@hostname.local (the defau
 ssh pi@raspberrypi.local
 ````
 
+## Linux
+
+### Compress and extract
+````
+tar -czvf name-of-archive.tar.gz /path/to/directory-or-file
+tar -xzvf archive.tar.gz
+`````
+* -c: Create an archive.
+* -x: Extract archive
+* -z: Compress the archive with gzip.
+* -v: “verbose” mode -> display progress
+* -f: Allows you to specify the filename of the archive.
